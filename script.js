@@ -4,15 +4,12 @@ $(document).ready(function(){
 	
 	function draw(){
 		var canvas = document.getElementById("canvas");
-		if (canvas.getContext){
-		var ctx = canvas.getContext('2d');
-		
+		var ctx= canvas.getContext('2d');
 		ctx.beginPath();
-		ctx.moveTo(75,50);
-		ctx.lineTo(100,75);
-		ctx.lineTo(100,25);
-		ctx.fill();
-		}
+		ctx.arc(100, 75, 50, 0, Math.PI*2);
+		ctx.stroke();
+
+		
 		
 	}
 	draw();
